@@ -57,8 +57,6 @@ def scrape_karkidi_jobs_selenium(job_title):
     return pd.DataFrame(job_listings)
 
 
-# --- Rest of your existing functions (preprocess_skills, vectorize_skills, classify_new_jobs, etc.) ---
-
 # --- Load models and data ---
 try:
     hierarchical_model = joblib.load('hierarchical_model.pkl')
